@@ -199,7 +199,7 @@ body {
 
 /* work section */
 
-.work {
+.work-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -226,12 +226,26 @@ body {
   backdrop-filter: blur(10px);
 }
 
+.work {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 2rem;
+  gap: 3rem;
+}
+
 .main-work-card {
   width: 80%;
   height: max-content;
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 30px;
+  border: 1px solid #0b75af;
 }
 
 .main-work-img {
@@ -272,11 +286,189 @@ body {
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
-  padding: 0.7rem;
+  padding: 0.2rem 0.7rem;
   border: 2px solid #0b75af;
   border-radius: 30px;
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(40, 40, 40, 1) 55%, rgba(62, 62, 62, 1) 100%);
+}
+
+.main-work-repo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.repo-btn {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 30px;
+  border: 2px solid #0b75af;
+  background: rgb(255, 255, 255);
+  color: black;
+  background-image: url('./images/github.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  text-align: left;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.repo-btn:hover {
+  background-color: #0b75af;
+  border: 2px solid black;
+  color: white;
+}
+
+.live-btn {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 30px;
+  border: 2px solid #0b75af;
+  background: rgb(255, 255, 255);
+  color: black;
+  background-image: url('./images/live.png');
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position-x: 90%;
+  background-position-y: center;
+  text-align: left;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.live-btn:hover {
+  background-color: #0b75af;
+  border: 2px solid black;
+  color: white;
+}
+
+/* Work Deck */
+
+.deck {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.li-work-card {
+  width: 35rem;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 30px;
+  border: 1px solid #0b75af;
+}
+
+.li-work-img {
+  width: 15rem;
+  height: 18rem;
+}
+
+.li-work-div-data {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.li-work-title {
+  color: black;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.li-work-desc {
+  color: black;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.li-work-tech {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.litech-p {
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
+  padding: 0.3rem;
+  border: 2px solid #0b75af;
+  border-radius: 30px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(40, 40, 40, 1) 55%, rgba(62, 62, 62, 1) 100%);
+}
+
+.li-work-repo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.li-repo-btn {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 30px;
+  border: 2px solid #0b75af;
+  background: rgb(255, 255, 255);
+  color: black;
+  background-image: url('./images/github.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  text-align: left;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.li-repo-btn:hover {
+  background-color: #0b75af;
+  border: 2px solid black;
+  color: white;
+}
+
+.li-live-btn {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 30px;
+  border: 2px solid #0b75af;
+  background: rgb(255, 255, 255);
+  color: black;
+  background-image: url('./images/live.png');
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position-x: 90%;
+  background-position-y: center;
+  text-align: left;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.li-live-btn:hover {
+  background-color: #0b75af;
+  border: 2px solid black;
+  color: white;
 }
 
 /* About */
@@ -298,7 +490,7 @@ body {
   color: white;
   font-size: 4rem;
   margin-bottom: 6rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
   margin-left: 4rem;
   font-weight: bold;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -336,7 +528,8 @@ body {
   width: 100%;
   align-self: center;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  text-decoration: underline;
 }
 
 .skill-li {
@@ -347,6 +540,7 @@ body {
   font-size: 1.5rem;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* contact */
@@ -459,4 +653,15 @@ footer {
   font-size: 1rem;
   margin-left: 2rem;
   margin-top: 0.5rem;
+}
+
+.image {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+}
+
+.image:hover {
+  animation: buttonanimation 0.5s steps(30);
+  animation-iteration-count: 2;
 }
