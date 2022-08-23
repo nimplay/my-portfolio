@@ -14,7 +14,7 @@ const works = [{
   id: 1,
   title: 'Leaderboard',
   description: 'This is a Leaderboard project in microverse course. Which reproduces a list of maximum score for a game',
-  image: './images/leaderboard.png',
+  image: './images/Leaderboard.png',
   tech: ['HTML', 'CSS', 'JS', 'API', 'WEBPACK'],
   repo: 'https://github.com/nimplay/leaderboard',
   live: 'https://nimplay.github.io/leaderboard/dist/',
