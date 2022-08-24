@@ -35,7 +35,7 @@ const works = [{
   image: './images/Calculator.png',
   tech: ['React', 'Webpack', 'JS', 'CSS'],
   repo: 'https://github.com/nimplay/math_magicians',
-  live: 'https://spiffy-unicorn-297994.netlify.app/calculator',
+  live: 'https://spiffy-unicorn-297994.netlify.app/',
 },
 {
   id: 4,
@@ -62,7 +62,7 @@ const works = [{
   image: './images/SchoolMusic.png',
   tech: ['GML'],
   repo: 'https://play.google.com/store/apps/details?id=com.nimplay.School_music',
-  live: '',
+  live: 'https://play.google.com/store/apps/details?id=com.nimplay.School_music',
 },
 ];
 
@@ -154,6 +154,16 @@ mainWork.tech.forEach((element) => {
   mainWorkDivTech.appendChild(techDiv);
 });
 
+repoBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.open(mainWork.repo, '_blank');
+});
+
+liveBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.open(mainWork.live, '_blank');
+});
+
 /* workcards */
 const Deck = document.querySelector('.deck');
 works.forEach((element) => {
@@ -202,6 +212,15 @@ works.forEach((element) => {
     techDiv.classList = 'litech-p';
     techDiv.textContent = e;
     liWorkDivTech.appendChild(techDiv);
+  });
+  repoBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open(element.repo, '_blank');
+  });
+
+  liveBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open(element.live, '_blank');
   });
 });
 /* contact form */
